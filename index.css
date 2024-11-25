@@ -14,7 +14,7 @@ body {
 }
 
 .navbar a {
-  color: magenta;
+  color: #e0def4;
   text-decoration: none;
   padding: 0.5em 1em;
   transition: background-color 0.3s;
