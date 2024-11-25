@@ -41,7 +41,7 @@ if (
     doc.body.appendChild(iframe);
 
     
-    location.replace("drive.google.com");
+    location.replace("https://drive.google.com");
 
     const script = doc.createElement("script");
     script.textContent = `
