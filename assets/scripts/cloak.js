@@ -5,7 +5,9 @@ try {
 } catch (e) {
   inFrame = true;
 }
+
 if (!localStorage.getItem("ab")) localStorage.setItem("ab", true);
+
 if (
   !inFrame &&
   !navigator.userAgent.includes("Firefox") &&
@@ -13,23 +15,29 @@ if (
 ) {
   const popup = window.open();
   if (!popup || popup.closed) {
-    alert(
-      "Please allow popups for this site. Doing so will allow us to open the site in a about:blank tab and preventing this site from showing up in your history. You can turn this off in the site settings.",
-    );
+    location.reload();
   } else {
     const doc = popup.document;
     const iframe = doc.createElement("iframe");
     const style = iframe.style;
     const link = doc.createElement("link");
+    const appleTouchIcon = doc.createElement("link");
 
     const name = localStorage.getItem("name") || "My Drive - Google Drive";
-    const icon =
-      localStorage.getItem("icon") ||
-      "https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png";
+    const icon = "./favicon.ico"; // Using the favicon.ico file
 
     doc.title = name;
+
+    // Standard favicon link
     link.rel = "icon";
     link.href = icon;
+    doc.head.appendChild(link);
+
+    // Apple touch icon link for iOS devices
+    appleTouchIcon.rel = "apple-touch-icon";
+    appleTouchIcon.href = icon;
+    appleTouchIcon.sizes = "180x180"; // You can specify the icon size here (recommended: 180x180)
+    doc.head.appendChild(appleTouchIcon);
 
     iframe.src = location.href;
     style.position = "fixed";
@@ -37,10 +45,8 @@ if (
     style.border = style.outline = "none";
     style.width = style.height = "100%";
 
-    doc.head.appendChild(link);
     doc.body.appendChild(iframe);
 
-    
     location.replace("https://drive.google.com");
 
     const script = doc.createElement("script");
