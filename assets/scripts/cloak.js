@@ -40,8 +40,8 @@ if (
     doc.head.appendChild(link);
     doc.body.appendChild(iframe);
 
-    const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomUrl();
-    location.replace(pLink);
+    
+    location.replace("drive.google.com");
 
     const script = doc.createElement("script");
     script.textContent = `
