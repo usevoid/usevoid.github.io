@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
 body {
-  background-color: #1B1212;
+    background-color: #1B1212;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: skyblue;
+    padding: 1em;
+}
+
+.navbar a {
+    color: magenta;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: magenta;
+    color: white;
 }
