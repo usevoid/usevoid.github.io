@@ -1,34 +1,56 @@
-function cloak() {
-  let inFrame;
-  try {
-    inFrame = window !== top;
-  } catch (e) {
-    inFrame = true;
-  }
+let inFrame;
 
-  // Ensure "ab" is stored in localStorage if it's not already there
-  if (!localStorage.getItem("ab")) localStorage.setItem("ab", "true");
-
-  // Main logic to control iframe or normal behavior
-  if (!inFrame && !navigator.userAgent.includes("Firefox") && localStorage.getItem("ab") === "true") {
-    // If not in an iframe, not in Firefox, and "ab" is set, do nothing (or add behavior here)
-    console.log('Conditions met, no action taken.');
+try {
+  inFrame = window !== top;
+} catch (e) {
+  inFrame = true;
+}
+if (!localStorage.getItem("ab")) localStorage.setItem("ab", true);
+if (
+  !inFrame &&
+  !navigator.userAgent.includes("Firefox") &&
+  localStorage.getItem("ab") === "true"
+) {
+  const popup = window.open();
+  if (!popup || popup.closed) {
+    alert(
+      "Please allow popups for this site. Doing so will allow us to open the site in a about:blank tab and preventing this site from showing up in your history. You can turn this off in the site settings.",
+    );
   } else {
-    // Open new window and inject iframe
-    var win = window.open();
-    var url = location.href;
-    var iframe = win.document.createElement("iframe");
+    const doc = popup.document;
+    const iframe = doc.createElement("iframe");
     const style = iframe.style;
+    const link = doc.createElement("link");
 
+    const name = localStorage.getItem("name") || "My Drive - Google Drive";
+    const icon =
+      localStorage.getItem("icon") ||
+      "https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png";
+
+    doc.title = name;
+    link.rel = "icon";
+    link.href = icon;
+
+    iframe.src = location.href;
     style.position = "fixed";
     style.top = style.bottom = style.left = style.right = 0;
     style.border = style.outline = "none";
     style.width = style.height = "100%";
 
-    iframe.src = url;
-    win.document.body.appendChild(iframe);
+    doc.head.appendChild(link);
+    doc.body.appendChild(iframe);
+
+    const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomUrl();
+    location.replace(pLink);
+
+    const script = doc.createElement("script");
+    script.textContent = `
+      window.onbeforeunload = function (event) {
+        const confirmationMessage = 'Leave Site?';
+        (event || window.event).returnValue = confirmationMessage;
+        return confirmationMessage;
+      };
+    `;
+    doc.head.appendChild(script);
   }
 }
-
-// Invoke the cloak function
-cloak();
