@@ -24,7 +24,7 @@ if (
     const appleTouchIcon = doc.createElement("link");
 
     const name = localStorage.getItem("name") || "My Drive - Google Drive";
-    const icon = "./favicon.ico"; // Using the favicon.ico file
+    const icon = "./apple-touch-icon.png"; // Using the favicon.ico file
 
     doc.title = name;
 
