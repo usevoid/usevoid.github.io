@@ -79,8 +79,6 @@ body {
   justify-content: center;
   align-items: center; /* Center the search bar vertically */
   margin-bottom: 20px;
-  border-color: #ffffff;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
 .search-wrapper {
@@ -103,7 +101,7 @@ body {
   border-radius: 8px;
   outline: none;
   position: relative;
-  border-color: #ffffff;
+  border: 2px solid white; /* Adding white outline */
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
