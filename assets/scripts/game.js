@@ -1,7 +1,7 @@
 
 const version = "1";
 const games = [
-  { "icon": `TEST`, "path": `TEST`, "error": true, "name": "TEST" }
+  { "icon": `test1234`, "path": `TEST`, "error": true, "name": "1234" }
 ];
 
 const gameContainer = document.getElementById('gameContainer');
