@@ -16,7 +16,7 @@ body {
   margin: 1em auto;
   width: 95%;
   max-width: 1150px;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3); /* Always glowing */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* Always glowing */
   height: 80px;
   padding: 0 20px;
   box-sizing: border-box;
