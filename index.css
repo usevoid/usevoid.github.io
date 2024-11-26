@@ -11,7 +11,7 @@ body {
   align-items: center;
   background-color: #393552;
   padding: 1em;
-  border-radius: 25;
+  border-radius: 25px;
 }
 
 .navbar a {
