@@ -2,7 +2,7 @@
 const version = "1";
 const games = [
   { "icon": `test1234`, "path": `TEST`, "error": true, "name": "1234" },
-  { "icon": `games/GunSpin/IMG_2653.jpeg`, "path": `/games/GunSpin/index.html`, "error": false, "name": "GunSpin" },
+  { "icon": `games/GunSpin/IMG_2653.jpeg`, "path": `games/GunSpin/index.html`, "error": false, "name": "GunSpin" },
 ];
 
 const gameContainer = document.getElementById('gameContainer');
