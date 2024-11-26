@@ -16,7 +16,7 @@ body {
   margin: 1em auto;
   width: 95%;
   max-width: 1150px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Brighter and more white glow */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Brighter and more white glow */
   height: 80px;
   padding: 0 20px;
   box-sizing: border-box;
@@ -79,6 +79,8 @@ body {
   justify-content: center;
   align-items: center; /* Center the search bar vertically */
   margin-bottom: 20px;
+  border-color: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
 .search-wrapper {
