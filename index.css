@@ -138,9 +138,10 @@ body {
   border-radius: 12px;
   padding: 10px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  border: 2px solid white; /* Adding white outline */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Brighter and more white glow */
 }
 
 .game-card:hover {
