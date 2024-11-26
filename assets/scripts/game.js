@@ -24,7 +24,7 @@ function createGameCard(container, icon, path, name, error) {
       saveLastPlayedGame({ icon, path, name, error });
       window.location.href = path;
     } else {
-      alert('Error: This game is unavailable.');
+      alert('Error: This game is unavailable. It could be because it is being worked on. If you think this is a bug, please contact us under the "contact" tab.');
     }
   };
 
