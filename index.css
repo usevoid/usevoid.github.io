@@ -68,6 +68,8 @@ body {
 
 .content {
   padding-top: 80px;
+  color: #e0def4;  /* Set content text color to match theme */
+  text-align: center; /* Center-align text */
 }
 
 .search-container {
