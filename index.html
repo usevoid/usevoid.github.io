@@ -1,11 +1,14 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Hub</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="navbar">
@@ -17,37 +20,31 @@
         About
       </a>
       <a href="./directories/services/index.html" class="about-link">
-        <img
-          src="./assets/img/services.png"
-          alt="Services Icon"
-          class="info-icon"
-          style="width: 37px; height: 37px;"
-        />
+        <img src="./assets/img/services.png" alt="Services Icon" class="info-icon" style="width: 37px; height: 37px;" />
         Services
       </a>
       <a href="./directories/contact/index.html" class="about-link">
-        <img
-          src="./assets/img/contact.png"
-          alt="Contact Icon"
-          class="info-icon"
-        />
+        <img src="./assets/img/contact.png" alt="Contact Icon" class="info-icon" />
         Contact Us
       </a>
     </div>
 
     <div class="content">
-        <h1>Continue Playing</h1>
-        <div class="game-container" id="lastPlayedContainer"></div>
+      <h1>Continue Playing</h1>
+      <div class="game-container" id="lastPlayedContainer"></div>
 
-        <h1>All Games</h1>
-        <div class="search-container">
-        <input type="text" class="search-input" placeholder="Search...">
-        <button class="search-button">🔍</button>
+      <h1>All Games</h1>
+      <div class="search-container">
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+        </div>
+      </div>
+
+      <div class="game-container" id="gameContainer"></div>
     </div>
-        <div class="game-container" id="gameContainer"></div>
-    </div>
-    
+
+    <script src="assets/scripts/cloak.js"></script>
+    <script src="assets/scripts/game.js"></script>
   </body>
-  <script src="assets/scripts/cloak.js"></script>
-  <script src="assets/scripts/game.js"></script>
 </html>
