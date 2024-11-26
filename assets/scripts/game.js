@@ -1,15 +1,4 @@
-const changelogBtn = document.getElementById('changelogBtn');
-        const changelogPopup = document.getElementById('changelogPopup');
-        const closePopupBtn = document.getElementById('closePopupBtn');
-        
 
-        changelogBtn.onclick = () => {
-            changelogPopup.style.display = 'block';
-        };
-
-        closePopupBtn.onclick = () => {
-            changelogPopup.style.display = 'none';
-        };
       // +1 when update duh idiot
         const version = "1";
 const games = [
