@@ -38,6 +38,18 @@ body {
   margin-right: auto; /* Pushes the rest of the content to the right */
 }
 
+/* Styles for About link with icon */
+.about-link {
+  display: flex;
+  align-items: center;
+}
+
+.info-icon {
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Make sure the image remains square */
+  margin-right: 5px; /* Add spacing between the icon and text */
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column; /* Stack items on smaller screens */
