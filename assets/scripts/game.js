@@ -10,8 +10,8 @@ const searchInput = document.getElementById('searchInput');
 
 function loadLastPlayedGames() {
   const lastPlayed = JSON.parse(localStorage.getItem('@void/lp')) || [];
-  lastPlayed.forEach(({ icon, path, name }) => {
-    createGameCard(lastPlayedContainer, icon, path, name, false);
+  lastPlayed.forEach(({ icon, path, name, error }) => {
+    createGameCard(lastPlayedContainer, icon, path, name, error);
   });
 }
 
@@ -21,7 +21,7 @@ function createGameCard(container, icon, path, name, error) {
   gameCard.onclick = () => {
     if (!error) {
       localStorage.setItem('@void/path', path);
-      saveLastPlayedGame({ icon, path, name });
+      saveLastPlayedGame({ icon, path, name, error });
       window.location.href = path;
     } else {
       alert('Error: This game is unavailable.');
@@ -48,7 +48,7 @@ function saveLastPlayedGame(game) {
     lastPlayed.splice(existingIndex, 1);
   }
   lastPlayed.unshift(game);
-  localStorage.setItem('@proton/lp', JSON.stringify(lastPlayed.slice(0, 5)));
+  localStorage.setItem('@void/lp', JSON.stringify(lastPlayed.slice(0, 5)));  // Correct key here
 }
 
 function loadAllGames() {
