@@ -86,26 +86,34 @@ body {
   max-width: 400px;
 }
 
-.search-icon {
-  color: #ffffff;
-  margin-right: 10px;
-  font-size: 20px;
-  padding-right: 10px;
-  border-right: 2px solid #ffffff; /* Added line between icon and input */
-}
-
 .search-input {
-  flex: 1;
-  border: none;
-  outline: none;
-  padding: 10px;
+  width: 100%;
+  padding: 10px 10px 10px 30px; /* Add padding to make space for the icon */
   font-size: 16px;
-  background-color: #2a3351;  /* Changed background color */
+  background-color: #2a3351;
   color: #ffffff;
+  border: 2px solid #3a3a3a;
+  border-radius: 8px;
+  outline: none;
+  position: relative;
 }
 
 .search-input::placeholder {
   color: #aaaaaa;
+}
+
+.search-input:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px; /* Position the icon to the left */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icon */
+  color: #ffffff;
+  font-size: 18px;
 }
 
 .game-container {
@@ -157,7 +165,7 @@ body {
   padding: 12px;
   border: 2px solid #3a3a3a;
   border-radius: 8px;
-  background-color: #2a3351;  /* Changed background color */
+  background-color: #2a3351;
   color: #ffffff;
   font-size: 1em;
   margin-bottom: 20px;
