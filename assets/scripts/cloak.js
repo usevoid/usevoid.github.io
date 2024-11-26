@@ -48,7 +48,5 @@ if (
     doc.body.appendChild(iframe);
 
     location.replace("https://drive.google.com");
-
-
   }
 }
