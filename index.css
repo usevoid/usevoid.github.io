@@ -1,177 +1,150 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
 
 body {
-	background-color: #26233a;
-	font-family: "Pixelify Sans", sans-serif;
-	margin: 0;
-	padding: 0;
+  background-color: #26233a;
+  font-family: "Pixelify Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
-	display: flex;
-	justify-content: space-between; /* Space between logo and nav links */
-	align-items: center;
-	background-color: #393552;
-	border-radius: 25px;
-	margin: 1em auto;
-	width: 95%; /* Change to 100% to fit the viewport */
-	max-width: 1150px; /* Add max-width to constrain width */
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional for better aesthetics */
-	height: 80px;
-	padding: 0 20px; /* Add padding to ensure content doesn't touch edges */
-	box-sizing: border-box; /* Include padding in the element's total width and height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #393552;
+  border-radius: 25px;
+  margin: 1em auto;
+  width: 95%;
+  max-width: 1150px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 80px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .navbar a {
-	color: #e0def4;
-	text-decoration: none;
-	padding: 0.5em 10px;
-	transition: background-color 0.3s, color 0.3s;
+  color: #e0def4;
+  text-decoration: none;
+  padding: 0.5em 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar a:hover {
-	background-color: #52527a; /* Slightly lighter hover background */
-	color: white;
-	border-radius: 5px; /* Smooth hover effect */
+  background-color: #52527a;
+  color: white;
+  border-radius: 5px;
 }
 
 .logo {
-	height: 65px;
-	width: 65px;
-	margin-right: auto; /* Pushes the rest of the content to the right */
+  height: 65px;
+  width: 65px;
+  margin-right: auto;
 }
 
-/* Styles for About link with icon */
 .about-link {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .info-icon {
-	width: 20px; /* Adjust the size as needed */
-	height: 20px; /* Make sure the image remains square */
-	margin-right: 5px; /* Add spacing between the icon and text */
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
 @media (max-width: 768px) {
-	.navbar {
-		flex-direction: column; /* Stack items on smaller screens */
-		align-items: flex-start; /* Align logo and links to the left */
-		padding: 1em;
-	}
-
-	.navbar a {
-		padding: 0.5em 0; /* Adjust link spacing for smaller screens */
-	}
-
-	.logo {
-		margin-bottom: 1em; /* Add space below the logo in stacked layout */
-		padding: 25px;
-	}
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+  .navbar a {
+    padding: 0.5em 0;
+  }
+  .logo {
+    margin-bottom: 1em;
+  }
 }
 
-/* Search bar container */
+.content {
+  padding-top: 80px;
+}
+
 .search-container {
-	display: flex;
-	align-items: center;
-	background-color: #fff;
-	border-radius: 25px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	overflow: hidden;
-	width: 300px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-/* Search input */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #1e2742;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-icon {
+  color: #ffffff;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
 .search-input {
-	flex: 1;
-	border: none;
-	outline: none;
-	padding: 10px 15px;
-	font-size: 16px;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #ffffff;
 }
 
-/* Search button */
-.search-button {
-	background-color: #4caf50;
-	color: white;
-	border: none;
-	padding: 10px 20px;
-	cursor: pointer;
-	font-size: 16px;
-	transition: background-color 0.3s ease;
+.search-input::placeholder {
+  color: #aaaaaa;
 }
 
-.search-button:hover {
-	background-color: #45a049;
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-        .content {
-            padding-top: 80px;
-        }
+.game-card {
+  background-color: #1e2742;
+  height: 250px;
+  width: 150px;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
 
-        .game-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
+.game-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
 
-        .game-card {
-            background-color: #1e2742;
-            height: 250px;
-            width: 150px;
-            border-radius: 12px;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
+.game-icon {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+}
 
-        .game-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
-        }
+.game-card:hover .game-icon {
+  opacity: 0.9;
+}
 
-        .game-icon {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 10px;
-            transition: opacity 0.3s;
-        }
-
-        .game-card:hover .game-icon {
-            opacity: 0.9;
-        }
-
-        .game-name {
-            margin-top: 10px;
-            font-size: 1.2em;
-            color: #e0e0e0;
-            font-weight: 500;
-            font-family: 'Fredonia One', monospace;
-        }
-
-        .search-input {
-            width: 65%;
-            padding: 12px;
-            border: 2px solid #3a3a3a;
-            border-radius: 8px;
-            background-color: #1e2742;
-            color: #ffffff;
-            font-size: 1em;
-            margin-bottom: 20px;
-            text-align: center;
-            outline: none;
-            transition: border 0.3s, box-shadow 0.3s;
-        }
-
-        .search-input:focus {
-            border-color: #ffffff;
-            box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-        }
-
-        .search-input::placeholder {
-            color: #aaaaaa;
-        }
+.game-name {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #e0e0e0;
+  font-weight: 500;
+}
