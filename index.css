@@ -65,5 +65,6 @@ body {
 
   .logo {
     margin-bottom: 1em; /* Add space below the logo in stacked layout */
+    padding: 25px;
   }
 }
