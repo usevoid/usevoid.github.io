@@ -14,7 +14,7 @@ body {
   background-color: #393552;
   border-radius: 25px;
   margin: 1em auto;
-  width: 100%; /* Change to 100% to fit the viewport */
+  width: 95%; /* Change to 100% to fit the viewport */
   max-width: 1150px; /* Add max-width to constrain width */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional for better aesthetics */
   height: 80px;
