@@ -89,7 +89,7 @@ body {
 
 .search-input {
   width: 100%;
-  padding: 10px 10px 10px 40px; /* Space for the icon inside the input */
+  padding: 10px 10px 10px 40px; /* Add padding on the left to make space for the icon */
   font-size: 16px;
   background-color: #2a3351;
   color: #ffffff;
@@ -110,7 +110,7 @@ body {
 
 .search-icon {
   position: absolute;
-  left: 12px; /* Position the icon inside the input */
+  left: 12px; /* Adjust position of icon inside input */
   top: 50%;
   transform: translateY(-50%); /* Vertically center the icon */
   color: #ffffff;
