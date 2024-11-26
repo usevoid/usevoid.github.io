@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
+
+body {
+	background-color: #26233a;
+	font-family: "Pixelify Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between; /* Space between logo and nav links */
+	align-items: center;
+	background-color: #393552;
+	border-radius: 25px;
+	margin: 1em auto;
+	width: 95%; /* Change to 100% to fit the viewport */
+	max-width: 1150px; /* Add max-width to constrain width */
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional for better aesthetics */
+	height: 80px;
+	padding: 0 20px; /* Add padding to ensure content doesn't touch edges */
+	box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.navbar a {
+	color: #e0def4;
+	text-decoration: none;
+	padding: 0.5em 10px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+	background-color: #52527a; /* Slightly lighter hover background */
+	color: white;
+	border-radius: 5px; /* Smooth hover effect */
+}
+
+.logo {
+	height: 65px;
+	width: 65px;
+	margin-right: auto; /* Pushes the rest of the content to the right */
+}
+
+/* Styles for About link with icon */
+.about-link {
+	display: flex;
+	align-items: center;
+}
+
+.info-icon {
+	width: 20px; /* Adjust the size as needed */
+	height: 20px; /* Make sure the image remains square */
+	margin-right: 5px; /* Add spacing between the icon and text */
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		flex-direction: column; /* Stack items on smaller screens */
+		align-items: flex-start; /* Align logo and links to the left */
+		padding: 1em;
+	}
+
+	.navbar a {
+		padding: 0.5em 0; /* Adjust link spacing for smaller screens */
+	}
+
+	.logo {
+		margin-bottom: 1em; /* Add space below the logo in stacked layout */
+		padding: 25px;
+	}
+}
