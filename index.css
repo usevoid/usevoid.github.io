@@ -100,10 +100,11 @@ body {
   font-size: 16px;
   background-color: #2a3351;
   color: #ffffff;
-  border: 2px solid #3a3a3a;
   border-radius: 8px;
   outline: none;
   position: relative;
+  border-color: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
 .search-input::placeholder {
