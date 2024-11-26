@@ -88,7 +88,7 @@ body {
 
 .search-input {
   width: 100%;
-  padding: 10px 10px 10px 30px; /* Add padding to make space for the icon */
+  padding: 10px 10px 10px 40px; /* Space for the icon inside the input */
   font-size: 16px;
   background-color: #2a3351;
   color: #ffffff;
@@ -96,6 +96,10 @@ body {
   border-radius: 8px;
   outline: none;
   position: relative;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16%22%3E%3Cpath d="M11.742 10.742a6.5 6.5 0 1 0-1.414 1.414 7.44 7.44 0 0 0 1.415-1.415zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: 10px center; /* Adjust the icon inside the input */
+  background-size: 18px; /* Adjust the icon size */
 }
 
 .search-input::placeholder {
@@ -105,15 +109,6 @@ body {
 .search-input:focus {
   border-color: #ffffff;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-}
-
-.search-icon {
-  position: absolute;
-  left: 10px; /* Position the icon to the left */
-  top: 50%;
-  transform: translateY(-50%); /* Vertically center the icon */
-  color: #ffffff;
-  font-size: 18px;
 }
 
 .game-container {
@@ -158,27 +153,4 @@ body {
   color: #e0e0e0;
   font-weight: 500;
   font-family: 'Fredonia One', monospace;
-}
-
-.search-input {
-  width: 65%;
-  padding: 12px;
-  border: 2px solid #3a3a3a;
-  border-radius: 8px;
-  background-color: #2a3351;
-  color: #ffffff;
-  font-size: 1em;
-  margin-bottom: 20px;
-  text-align: center;
-  outline: none;
-  transition: border 0.3s, box-shadow 0.3s;
-}
-
-.search-input:focus {
-  border-color: #ffffff;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-}
-
-.search-input::placeholder {
-  color: #aaaaaa;
 }
