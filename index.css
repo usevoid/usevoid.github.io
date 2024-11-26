@@ -74,9 +74,9 @@ body {
 
 .search-container {
   display: flex;
-  justify-content: center
+  justify-content: center;
+  align-items: center; /* Center the search bar vertically */
   margin-bottom: 20px;
-  align-items: center;
 }
 
 .search-wrapper {
