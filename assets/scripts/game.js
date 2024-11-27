@@ -1,6 +1,5 @@
 const version = "1";
 const games = [
-	{ icon: "test1234", path: "TEST", error: true, name: "1234" },
 	{
 		icon: "games/GunSpin/IMG_4781.png",
 		path: "games/GunSpin/index.html",
