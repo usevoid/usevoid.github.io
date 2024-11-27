@@ -100,14 +100,10 @@ scene("menu", () => {
   });
 
   onClick("clickable", (b) => {
-    if (window.self == window.top) {
       fadeOut();
       setTimeout(() => {
         go(b.goTo);
       }, FADE_TIME);
-    } else {
-      // idk how to fix button so temp window.open("https://Ballistic-Chickens.mrvoo.repl.co", "_blank");
-    }
   });
 
   function newCloud(p) {
