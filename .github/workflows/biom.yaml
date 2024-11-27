@@ -1,4 +1,4 @@
-name: Code Formatting
+name: Code quality
 
 on:
   push:
@@ -10,27 +10,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
       - name: Setup Biome
         uses: biomejs/setup-biome@v2
         with:
           version: latest
-        
-      - name: Run Biome Check
-        id: biome_check
+      - name: Run Biome
         run: biome ci .
-        
-      - name: Fix Formatting Issues
-        if: ${{ failure() }} # Run only if the biome check fails
-        run: |
-          biome format --write
-          git status
-        
-      - name: Commit and Push Fixes
-        if: ${{ failure() }} # Attempt commit and push only if fixes were applied
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Apply Biome formatting fixes" || echo "No changes to commit"
-          git push || echo "Nothing to push"
