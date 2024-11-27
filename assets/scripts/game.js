@@ -240,6 +240,12 @@ const games = [
 		error: false,
 		name: "Wordle",
 	},
+	{
+		icon: "games/BlockBlast/favicon.ico"
+		path: "games/BlockBlast/index.html",
+		error: false,
+		name: "Block Blast",
+	},
 ];
 
 const gameContainer = document.getElementById("gameContainer");
