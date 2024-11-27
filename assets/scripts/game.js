@@ -241,7 +241,7 @@ const games = [
 		name: "Wordle",
 	},
 	{
-		icon: "games/BlockBlast/favicon.ico"
+		icon: "games/BlockBlast/favicon.ico",
 		path: "games/BlockBlast/index.html",
 		error: false,
 		name: "Block Blast",
