@@ -246,7 +246,16 @@ const games = [
 		error: false,
 		name: "Block Blast",
 	},
+{
+		icon: "games/roblox/IMG_2686.jpeg",
+		path: "games/roblox/index.html",
+		error: false,
+		name: "Roblox",
+	},
+
+
 ];
+
 
 const gameContainer = document.getElementById("gameContainer");
 const lastPlayedContainer = document.getElementById("lastPlayedContainer");
