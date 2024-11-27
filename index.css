@@ -1,170 +1,170 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
 
 body {
-  background-color: #26233a;
-  font-family: "Pixelify Sans", sans-serif;
-  margin: 0;
-  padding: 0;
+	background-color: #26233a;
+	font-family: "Pixelify Sans", sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #393552;
-  border-radius: 25px;
-  margin: 1em auto;
-  width: 95%;
-  max-width: 1150px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Brighter and more white glow */
-  height: 80px;
-  padding: 0 20px;
-  box-sizing: border-box;
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
-  border: 2px solid white; /* Adding white outline */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #393552;
+	border-radius: 25px;
+	margin: 1em auto;
+	width: 95%;
+	max-width: 1150px;
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Brighter and more white glow */
+	height: 80px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	transition: box-shadow 0.3s ease, border-color 0.3s ease;
+	border: 2px solid white; /* Adding white outline */
 }
 
 .navbar a {
-  color: #e0def4;
-  text-decoration: none;
-  padding: 0.5em 10px;
-  transition: background-color 0.3s, color 0.3s;
+	color: #e0def4;
+	text-decoration: none;
+	padding: 0.5em 10px;
+	transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #52527a;
-  color: white;
-  border-radius: 5px;
+	background-color: #52527a;
+	color: white;
+	border-radius: 5px;
 }
 
 .logo {
-  height: 65px;
-  width: 65px;
-  margin-right: auto;
+	height: 65px;
+	width: 65px;
+	margin-right: auto;
 }
 
 .about-link {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .info-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1em;
-  }
-  .navbar a {
-    padding: 0.5em 0;
-  }
-  .logo {
-    margin-bottom: 1em;
-  }
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 1em;
+	}
+	.navbar a {
+		padding: 0.5em 0;
+	}
+	.logo {
+		margin-bottom: 1em;
+	}
 }
 
 .content {
-  padding-top: 80px;
-  color: #e0def4;  /* Set content text color to match theme */
-  text-align: center; /* Center-align text */
+	padding-top: 80px;
+	color: #e0def4; /* Set content text color to match theme */
+	text-align: center; /* Center-align text */
 }
 
 .search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Center the search bar vertically */
-  margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center; /* Center the search bar vertically */
+	margin-bottom: 20px;
 }
 
 .search-wrapper {
-  display: flex;
-  align-items: center;
-  position: relative;
-  background-color: #26233a;
-  border-radius: 25px;
-  padding: 5px 10px;
-  width: 100%;
-  max-width: 400px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-color: #26233a;
+	border-radius: 25px;
+	padding: 5px 10px;
+	width: 100%;
+	max-width: 400px;
 }
 
 .search-input {
-  width: 100%;
-  padding: 10px 10px 10px 40px; /* Add padding on the left to make space for the icon */
-  font-size: 16px;
-  background-color: #2a3351;
-  color: #ffffff;
-  border-radius: 8px;
-  outline: none;
-  position: relative;
-  border: 2px solid white; /* Adding white outline */
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+	width: 100%;
+	padding: 10px 10px 10px 40px; /* Add padding on the left to make space for the icon */
+	font-size: 16px;
+	background-color: #2a3351;
+	color: #ffffff;
+	border-radius: 8px;
+	outline: none;
+	position: relative;
+	border: 2px solid white; /* Adding white outline */
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
 .search-input::placeholder {
-  color: #aaaaaa;
+	color: #aaaaaa;
 }
 
 .search-input:focus {
-  border-color: #ffffff;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+	border-color: #ffffff;
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
 .search-icon {
-  position: absolute;
-  left: 12px; /* Adjust position of icon inside input */
-  top: 50%;
-  transform: translateY(-50%); /* Vertically center the icon */
-  color: #ffffff;
-  font-size: 18px;
-  pointer-events: none; /* Prevent the icon from interfering with input */
+	position: absolute;
+	left: 12px; /* Adjust position of icon inside input */
+	top: 50%;
+	transform: translateY(-50%); /* Vertically center the icon */
+	color: #ffffff;
+	font-size: 18px;
+	pointer-events: none; /* Prevent the icon from interfering with input */
 }
 
 .game-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
 }
 
 .game-card {
-  background-color: #393552;
-  height: 250px;
-  width: 150px;
-  border-radius: 12px;
-  padding: 10px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  border: 2px solid white; /* Adding white outline */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Brighter and more white glow */
+	background-color: #393552;
+	height: 250px;
+	width: 150px;
+	border-radius: 12px;
+	padding: 10px;
+	text-align: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+	border: 2px solid white; /* Adding white outline */
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Brighter and more white glow */
 }
 
 .game-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+	transform: translateY(-8px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
 }
 
 .game-icon {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: opacity 0.3s;
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 10px;
+	transition: opacity 0.3s;
 }
 
 .game-card:hover .game-icon {
-  opacity: 0.9;
+	opacity: 0.9;
 }
 
 .game-name {
-  margin-top: 10px;
-  font-size: 1.2em;
-  color: #e0e0e0;
-  font-weight: 500;
-  font-family: "Pixelify Sans", sans-serif;
+	margin-top: 10px;
+	font-size: 1.2em;
+	color: #e0e0e0;
+	font-weight: 500;
+	font-family: "Pixelify Sans", sans-serif;
 }
