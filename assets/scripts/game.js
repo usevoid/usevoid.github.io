@@ -32,7 +32,7 @@ const games = [
 	},
 	{
 		icon: "games/AwesomeTanks/IMG_4799.jpeg",
-		path: "games/awesomeTanks/index.html",
+		path: "games/AwesomeTanks/index.html",
 		error: false,
 		name: "Awesome Tanks",
 	},
