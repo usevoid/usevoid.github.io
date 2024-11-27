@@ -37,7 +37,7 @@ const games = [
 		name: "Awesome Tanks",
 	},
 	{
-		icon: "games/BallisticChickens/logo.png",
+		icon: "games/BallisticChickens/IMG_4808.jpeg",
 		path: "games/BallisticChickens/index.html",
 		error: false,
 		name: "Ballistic Chickens",
