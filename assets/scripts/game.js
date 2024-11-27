@@ -2,7 +2,7 @@ const version = "1";
 const games = [
 	{ icon: "test1234", path: "TEST", error: true, name: "1234" },
 	{
-		icon: "games/GunSpin/IMG_2653.jpeg",
+		icon: "games/GunSpin/IMG_4781.png",
 		path: "games/GunSpin/index.html",
 		error: false,
 		name: "Gun Spin",
@@ -32,7 +32,7 @@ const games = [
 		name: "Angry Sharks",
 	},
 	{
-		icon: "games/AwesomeTanks/images/game.png",
+		icon: "games/AwesomeTanks/IMG_4799.jpeg",
 		path: "games/awesomeTanks/index.html",
 		error: false,
 		name: "Awesome Tanks",
@@ -68,7 +68,7 @@ const games = [
 		name: "Color Switch",
 	},
 	{
-		icon: "games/Coreball/image/WB_logo.png",
+		icon: "games/Coreball/IMG_4800.png",
 		path: "games/Coreball/index.html",
 		error: false,
 		name: "Coreball",
@@ -92,7 +92,7 @@ const games = [
 		name: "Dunes",
 	},
 	{
-		icon: "games/Edgesurf/splash.png",
+		icon: "games/Edgesurf/IMG_4801.jpeg",
 		path: "games/Edgesurf/index.html",
 		error: false,
 		name: "Edge Surf",
@@ -104,13 +104,13 @@ const games = [
 		name: "Euro Cup",
 	},
 	{
-		icon: "games/FactoryBallsForever/images/factoryballsforever_atlas_.png",
+		icon: "games/FactoryBallsForever/IMG_4784.jpeg",
 		path: "games/FactoryBallsForever/index.html",
 		error: false,
 		name: "Factory Balls Forever",
 	},
 	{
-		icon: "games/Flappy2048/favicon.ico",
+		icon: "games/Flappy2048/IMG_4803.png",
 		path: "games/Flappy2048/index.html",
 		error: false,
 		name: "Flappy 2048",
@@ -134,7 +134,7 @@ const games = [
 		name: "Idle Breakout",
 	},
 	{
-		icon: "games/Monkey-mart/icon.png",
+		icon: "games/Monkey-mart/IMG_4804.png",
 		path: "games/Monkey-mart/index.html",
 		error: false,
 		name: "Monkey Mart",
@@ -146,7 +146,7 @@ const games = [
 		name: "Paper.io 2",
 	},
 	{
-		icon: "games/Pixelgun3d/Build/Shooting.jpg",
+		icon: "games/Pixelgun3d/IMG_4636.png",
 		path: "games/Pixelgun3d/index.html",
 		error: false,
 		name: "Pixel Gun 3D",
@@ -194,7 +194,7 @@ const games = [
 		name: "Cannon Basket 4",
 	},
 	{
-		icon: "games/championisland/splash.png",
+		icon: "games/championisland/IMG_4806.jpeg",
 		path: "games/championisland/index.html",
 		error: false,
 		name: "Champion Island",
