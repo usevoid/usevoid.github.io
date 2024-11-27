@@ -17,19 +17,20 @@ jobs:
           version: latest
         
       - name: Run Biome Check
+        id: biome_check
         run: biome ci .
         
-      - name: Fix Formatting Issues (if any)
-        if: ${{ failure() }} # Runs only if the previous step fails
+      - name: Fix Formatting Issues
+        if: ${{ failure() }} # Run only if the biome check fails
         run: |
-          echo "Formatting issues detected. Applying fixes..."
           biome format --write
+          git status
         
       - name: Commit and Push Fixes
-        if: ${{ steps.fix.outcome == 'success' }} # Runs only if formatting fixes were applied
+        if: ${{ failure() }} # Attempt commit and push only if fixes were applied
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Apply Biome formatting fixes"
-          git push
+          git commit -m "Apply Biome formatting fixes" || echo "No changes to commit"
+          git push || echo "Nothing to push"
