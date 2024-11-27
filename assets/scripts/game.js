@@ -2,7 +2,11 @@
 const version = "1";
 const games = [
   { "icon": `test1234`, "path": `TEST`, "error": true, "name": "1234" },
-  { "icon": `games/GunSpin/IMG_2653.jpeg`, "path": `games/GunSpin/index.html`, "error": false, "name": "GunSpin" },
+  { "icon": `games/GunSpin/IMG_2653.jpeg`, "path": `games/GunSpin/index.html`, "error": false, "name": "Gun Spin" },
+  { "icon": `games/2048/apple-touch-icon.png`, "path": `games/2048/index.html`, "error": false, "name": "2048" },
+  { "icon": `games/8-ball/IMG_2666.jpeg`, "path": `games/8-ball/index.html`, "error": false, "name": "8 Ball Pool" },
+  { "icon": `games/Among-Us/red.png`, "path": `games/Among-Us/index.html`, "error": false, "name": "Among Us" },
+  { "icon": `games/AngrySharks/icon-512x512.png`, "path": `games/AngrySharks/index.html`, "error": false, "name": "Angry Sharks" },
 ]
 
 const gameContainer = document.getElementById('gameContainer');
