@@ -161,3 +161,9 @@ body {
 	font-weight: 500;
 	font-family: "Fredonia One", monospace;
 }
+
+.contact-paragraphs {
+	color: white;
+	box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6);
+	text-align: center;
+} 
