@@ -106,7 +106,7 @@ scene("menu", () => {
         go(b.goTo);
       }, FADE_TIME);
     } else {
-      window.open("https://Ballistic-Chickens.mrvoo.repl.co", "_blank");
+      // idk how to fix button so temp window.open("https://Ballistic-Chickens.mrvoo.repl.co", "_blank");
     }
   });
 
