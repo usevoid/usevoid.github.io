@@ -224,7 +224,7 @@ const games = [
 		name: "Snow Battle",
 	},
 	{
-		icon: "games/tanukisunset",
+		icon: "games/tanukisunset/IMG_4797.jpeg",
 		path: "games/tanukisunset/index.html",
 		error: false,
 		name: "Tanuki Sunset",
