@@ -246,8 +246,12 @@ const games = [
 		error: false,
 		name: "Roblox",
 	},
-
-
+	{
+		icon: "games/VolleyRandom/splash.png",
+		path: "games/VolleyRandom/index.html",
+		error: false,
+		name: "Volleyball Random",
+	},
 ];
 
 
