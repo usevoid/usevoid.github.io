@@ -240,13 +240,7 @@ const games = [
 		error: false,
 		name: "Wordle",
 	},
-	{
-		icon: "games/BlockBlast/favicon.ico",
-		path: "games/BlockBlast/index.html",
-		error: false,
-		name: "Block Blast",
-	},
-{
+        {
 		icon: "games/roblox/IMG_2686.jpeg",
 		path: "games/roblox/index.html",
 		error: false,
