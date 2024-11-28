@@ -258,6 +258,12 @@ const games = [
 		error: false,
 		name: "Boxing Random",
 	},
+	{
+		icon: "games/BreakLock/assets/icons/ios-180x180.png",
+		path: "games/BreakLock/index.html",
+		error: false,
+		name: "Breaklock",
+	},
 ];
 
 
