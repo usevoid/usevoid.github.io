@@ -264,6 +264,12 @@ const games = [
 		error: false,
 		name: "Breaklock",
 	},
+	{
+		icon: "games/1v1.lol/splash.png",
+		path: "games/1v1.lol/index.html",
+		error: false,
+		name: "1V1.LOL",
+	},
 ];
 
 
