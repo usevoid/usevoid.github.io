@@ -263,7 +263,7 @@ const games = [
 		path: "games/BoxingRandom/index.html",
 		error: false,
 		name: "Boxing Random",
-	},
+	}
 ];
 
 
