@@ -252,6 +252,12 @@ const games = [
 		error: false,
 		name: "Volleyball Random",
 	},
+	{
+		icon: "games/BoxingRandom/512x512.jpg",
+		path: "games/BoxingRandom/index.html",
+		error: false,
+		name: "Boxing Random",
+	},
 ];
 
 
