@@ -235,7 +235,7 @@ const games = [
 		name: "Tiny Fishing",
 	},
 	{
-		icon: "games/wordle/img/logo_32x32.png",
+		icon: "games/wordle/img/IMG_2703.png",
 		path: "games/wordle/index.html",
 		error: false,
 		name: "Wordle",
