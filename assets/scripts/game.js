@@ -284,7 +284,7 @@ const games = [
 		icon: "games/BlumgiSlime/IMG_2665.jpeg",
 		path: "games/BlumgiSlime/index.html",
 		error: false,
-		name: "Soccer Random",
+		name: "Blumgi Slime",
 	},
 
 	
