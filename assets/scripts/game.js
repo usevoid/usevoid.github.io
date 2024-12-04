@@ -272,6 +272,22 @@ const games = [
 	},
 
 	
+		{
+		icon: "games/soccer-random/test.png",
+		path: "games/soccer-random/index.html",
+		error: false,
+		name: "Soccer Random",
+	},
+
+
+		{
+		icon: "games/BlumgiSlime/IMG_2665.jpeg",
+		path: "games/BlumgiSlime/index.html",
+		error: false,
+		name: "Soccer Random",
+	},
+
+	
 ];
 
 
@@ -322,7 +338,7 @@ function saveLastPlayedGame(game) {
 		lastPlayed.splice(existingIndex, 1);
 	}
 	lastPlayed.unshift(game);
-	localStorage.setItem("@void/lp", JSON.stringify(lastPlayed.slice(0, 5))); // Correct key here
+	localStorage.setItem("@void/lp", JSON.stringify(lastPlayed.slice(0, 5))); 
 }
 
 function loadAllGames() {
