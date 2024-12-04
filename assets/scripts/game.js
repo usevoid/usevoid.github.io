@@ -1,4 +1,4 @@
-const version = "1";
+const version = "0.5";
 const games = [
 	{
 		icon: "games/GunSpin/IMG_4781.png",
@@ -264,7 +264,14 @@ const games = [
 		error: false,
 		name: "Breaklock",
 	},
+		{
+		icon: "games/doge-miner/dogeminer.jpeg",
+		path: "games/doge-miner/index.html",
+		error: false,
+		name: "Doge Miner",
+	},
 
+	
 ];
 
 
