@@ -17,12 +17,9 @@ jobs:
       - name: Setup Biome
         uses: biomejs/setup-biome@v2.2.1
         with:
-          # GitHub Actions token to authenticate API requests
           token: ${{ secrets.GITHUB_TOKEN }}
-          # The version of the Biome CLI to install (e.g., "1.0.0")
           version: '1.9.4'
-          # Set the working directory if needed, e.g., './project'
           working-dir: './'
           
-      - name: Verify Biome Installation
-        run: biome --version
+      - name: Format Code
+        run: biome ci .
