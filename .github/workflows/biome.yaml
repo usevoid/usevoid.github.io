@@ -22,4 +22,10 @@ jobs:
           working-dir: './'
           
       - name: Format Code
+        run: biome format .
+
+      - name: Check Formatting
         run: biome ci .
+
+      - name: Lint Code
+        run: biome lint .
