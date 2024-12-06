@@ -1,2 +1,78 @@
-<iframe id="frame" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; border: none;" sandbox="allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-modals allow-orientation-lock" src="https://bearacat.bearcat.rocks/static/embed.html#https://mathsspot.com/apps/roblox-corporation/5349/roblox.html"></iframe>
-<title>Roblox</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #333;
+      color: white;
+      padding: 0 15px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    nav h1 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    nav img {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+    }
+
+    iframe {
+      position: fixed;
+      top: 50px;
+      left: 0;
+      width: 100vw;
+      height: calc(100vh - 50px);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>Roblox</h1>
+  <img src="assets/img/max.png" alt="Full Screen" onclick="toggleFullScreen()">
+</nav>
+
+<iframe id="frame" 
+        sandbox="allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-modals allow-orientation-lock"
+        src="https://bearacat.bearcat.rocks/static/embed.html#https://mathsspot.com/apps/roblox-corporation/5349/roblox.html">
+</iframe>
+
+<script>
+  function toggleFullScreen() {
+    const iframe = document.getElementById('frame');
+    if (iframe.requestFullscreen) {
+      iframe.requestFullscreen();
+    } else if (iframe.mozRequestFullScreen) {
+      iframe.mozRequestFullScreen();
+    } else if (iframe.webkitRequestFullscreen) {
+      iframe.webkitRequestFullscreen();
+    } else if (iframe.msRequestFullscreen) {
+      iframe.msRequestFullscreen();
+    }
+  }
+</script>
+
+</body>
+</html>
