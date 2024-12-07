@@ -1,8 +1,0 @@
-{
-	"dependencies": {
-		"@biomejs/biome": "1.9.4"
-	},
-	"scripts": {
-		"format": "pnpm biome check --write"
-	}
-}
