@@ -20,7 +20,7 @@ body {
 	height: 80px;
 	padding: 0 20px; /* Add padding to ensure content doesn't touch edges */
 	box-sizing: border-box; /* Include padding in the element's total width and height */
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Brighter and more white glow */
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Brighter and more white glow */
 	border: 2px solid white; /* Adding white outline */
 }
 

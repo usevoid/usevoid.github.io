@@ -240,7 +240,7 @@ const games = [
 		error: false,
 		name: "Wordle",
 	},
-        {
+	{
 		icon: "games/roblox/IMG_2686.jpeg",
 		path: "games/roblox/index.html",
 		error: false,
@@ -264,32 +264,27 @@ const games = [
 		error: false,
 		name: "Breaklock",
 	},
-		{
+	{
 		icon: "games/doge-miner/dogeminer.jpeg",
 		path: "games/doge-miner/index.html",
 		error: false,
 		name: "Doge Miner",
 	},
 
-	
-		{
+	{
 		icon: "games/soccer-random/test.png",
 		path: "games/soccer-random/index.html",
 		error: false,
 		name: "Soccer Random",
 	},
 
-
-		{
+	{
 		icon: "games/BlumgiSlime/IMG_2665.jpeg",
 		path: "games/BlumgiSlime/index.html",
 		error: false,
 		name: "Blumgi Slime",
 	},
-
-	
 ];
-
 
 const gameContainer = document.getElementById("gameContainer");
 const lastPlayedContainer = document.getElementById("lastPlayedContainer");
@@ -338,7 +333,7 @@ function saveLastPlayedGame(game) {
 		lastPlayed.splice(existingIndex, 1);
 	}
 	lastPlayed.unshift(game);
-	localStorage.setItem("@void/lp", JSON.stringify(lastPlayed.slice(0, 5))); 
+	localStorage.setItem("@void/lp", JSON.stringify(lastPlayed.slice(0, 5)));
 }
 
 function loadAllGames() {
