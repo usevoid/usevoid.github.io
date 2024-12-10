@@ -26,8 +26,8 @@
       "**/.astro/**",
       "**/node_modules/**",
       "**/assets/bundled/**",
-      "*.astro",
-      "**/assets/json/**"
+      "**/assets/json/**",
+      "*.astro"
     ]
   },
   "organizeImports": {
