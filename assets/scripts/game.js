@@ -242,7 +242,7 @@ const games = [
 	},
 	{
 		icon: "games/roblox/IMG_2686.jpeg",
-		path: "games/roblox/index.html",
+		path: "static/index.html",
 		error: false,
 		name: "Roblox",
 	},
