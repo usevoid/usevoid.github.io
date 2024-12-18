@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/static/nowgg/',
-    bare:'https://homes.renaca.com/fq/',
+    bare:'https://bare.benrogo.net',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/static/uv/uv.handler.js',
