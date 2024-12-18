@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: '/static/nowgg/',
+    prefix: '/usevoid.github.io1/static/nowgg/',
     bare:'https://homes.renaca.com/fq/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
